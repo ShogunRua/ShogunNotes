@@ -49,6 +49,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":domain"))
 
     //Kapt
     val roomVersion = "2.3.0"
