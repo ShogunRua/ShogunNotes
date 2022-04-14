@@ -5,6 +5,7 @@ import androidx.room.Room
 import com.shogunrua.data.data_source.NoteDatabase
 import com.shogunrua.data.repository.NoteRepositoryImpl
 import com.shogunrua.domain.repository.NoteRepository
+import com.shogunrua.domain.usecases.AddNoteUseCase
 import com.shogunrua.domain.usecases.DeleteNoteUseCase
 import com.shogunrua.domain.usecases.GetNotesUseCase
 import dagger.Module
@@ -43,5 +44,11 @@ object AppModule {
     @Singleton
     fun provideDeleteNoteUseCases(repository: NoteRepository): DeleteNoteUseCase {
         return DeleteNoteUseCase(repository)
+    }
+
+    @Provides
+    @Singleton
+    fun addNoteUseCases(repository: NoteRepository): AddNoteUseCase {
+        return AddNoteUseCase(repository)
     }
 }
