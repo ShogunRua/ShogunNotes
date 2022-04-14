@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
     kotlin("kapt")
 }
@@ -9,11 +9,8 @@ android {
     compileSdk = 32
 
     defaultConfig {
-        applicationId = "com.shogunrua.shogunnotesapp"
         minSdk = 24
         targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -68,4 +65,8 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:$daggerHilt")
     api("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     kapt("androidx.hilt:hilt-compiler:$hilt")
+
+    // Room
+    api("androidx.room:room-runtime:$roomVersion")
+    api("androidx.room:room-ktx:$roomVersion")
 }
