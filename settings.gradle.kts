@@ -1,3 +1,9 @@
+rootProject.name = "ShogunNotesApp"
+
+include (":presentation")
+include (":data")
+include (":domain")
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -12,7 +18,3 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "ShogunNotesApp"
-include ':presentation'
-include ':data'
-include ':domain'
