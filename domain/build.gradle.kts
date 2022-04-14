@@ -50,7 +50,6 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(project(":presentation"))
 
     val composeVersion = "1.1.1"
 

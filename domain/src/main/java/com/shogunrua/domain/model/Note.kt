@@ -2,7 +2,6 @@ package com.shogunrua.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.shogunrua.shogunnotesapp.ui.theme.*
 
 @Entity
 data class Note(
@@ -11,8 +10,4 @@ data class Note(
     val timestamp: Long,
     val color: Int,
     @PrimaryKey val id: Int? = null
-) {
-    companion object {
-        val noteColors = listOf(RedOrange, LightGreen, Violet, BabyBlue, RedPink)
-    }
-}
+)

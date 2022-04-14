@@ -7,6 +7,7 @@ import com.shogunrua.data.repository.NoteRepositoryImpl
 import com.shogunrua.domain.repository.NoteRepository
 import com.shogunrua.domain.usecases.AddNoteUseCase
 import com.shogunrua.domain.usecases.DeleteNoteUseCase
+import com.shogunrua.domain.usecases.GetNoteUseCase
 import com.shogunrua.domain.usecases.GetNotesUseCase
 import dagger.Module
 import dagger.Provides
@@ -51,4 +52,11 @@ object AppModule {
     fun addNoteUseCases(repository: NoteRepository): AddNoteUseCase {
         return AddNoteUseCase(repository)
     }
+
+    @Provides
+    @Singleton
+    fun getNoteUseCases(repository: NoteRepository): GetNoteUseCase {
+        return GetNoteUseCase(repository)
+    }
+
 }
