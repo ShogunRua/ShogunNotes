@@ -94,6 +94,8 @@ dependencies {
     // Room
     api("androidx.room:room-runtime:$roomVersion")
     api("androidx.room:room-ktx:$roomVersion")
+    kapt("androidx.room:room-compiler:2.4.2")
+    kapt("android.arch.persistence.room:compiler:1.1.1")
 
     // Kotlin Extensions and Coroutines support for Room
     api("androidx.room:room-ktx:2.4.2")

@@ -6,7 +6,7 @@ import com.shogunrua.domain.model.Note
 
 @Database(
     entities = [Note::class],
-    version = 1
+    version = 1,
 )
 abstract class NoteDatabase: RoomDatabase() {
 
@@ -15,5 +15,4 @@ abstract class NoteDatabase: RoomDatabase() {
     companion object {
         const val DATABASE_NAME = "notes_db"
     }
-
 }

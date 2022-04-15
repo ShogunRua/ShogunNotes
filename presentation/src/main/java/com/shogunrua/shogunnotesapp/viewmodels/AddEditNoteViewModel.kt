@@ -29,14 +29,14 @@ class AddEditNoteViewModel @Inject constructor(
 
     private val _noteTitle = mutableStateOf(
         NoteTextFieldState(
-            hint = "Enter title..."
+            hint = "Введите заголовок..."
         )
     )
     val noteTitle: State<NoteTextFieldState> = _noteTitle
 
     private val _noteContent = mutableStateOf(
         NoteTextFieldState(
-            hint = "Enter some content"
+            hint = "Текст заметки..."
         )
     )
     val noteContent: State<NoteTextFieldState> = _noteContent
