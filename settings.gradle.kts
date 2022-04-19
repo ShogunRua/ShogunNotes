@@ -1,4 +1,4 @@
-rootProject.name = "ShogunNotes"
+rootProject.name = "Shogun Notes"
 
 include (":presentation")
 include (":data")
