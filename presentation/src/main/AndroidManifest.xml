@@ -5,15 +5,14 @@
     <application
         android:name=".ShogunNoteApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_shogun_icon"
+        android:icon="@mipmap/ic_shogun_notes_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_shogun_notes_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShogunNotesApp">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.ShogunNotesApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
